@@ -1,0 +1,31 @@
+
+/* CSS for the 404 page that styles the button, container and the missingno picture*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#missingno{
+    height: 150px;
+    width: auto;
+}
+
+button{
+    color: var(--white-colour);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #000000;
+    font-size: 25px;
+    border-style: none;
+    border-radius: 7px;
+    border: solid #303030;
+    margin: 5px; 
+    width: fit-content;
+}
+
+button:hover {
+    background-color: var(--white-colour);
+    color: #000000;
+}

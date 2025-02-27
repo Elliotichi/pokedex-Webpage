@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="../css/PokeSearchStyle.css" id="pokesearchstyle">
+    <script src="scripts\searchScript.js"></script>
+    <script src="scripts\darkmode.js"></script>
+</head>
+
+
+
+<body>
+    <%- include('../partials/nav') %>
+
+     <!-- ====================================== main body ===================================== -->
+    <!-- This page is for indiviual, more indepth pokemon searches, it allows the user to input the
+    pokemons number or name, and lets them see their stats, moves and location to catch them from -->
+     <div class="sort">
+        <!-- Pokemon sectiom shows the pokemons name, their stats, and a small picture of them,
+        it also houses the button and search bar, which allows them to look up a pokemon or get a
+        a random one-->
+
+        <div class="pokemonSection">
+
+            <div class="search">
+                <div class="left">
+                    <input type="text" placeholder="Search For pokémon..." id="pokemonInput">
+                </div>
+                <div class="right">
+                    <button id="getPokemonButton">Get Pokémon!</button>
+                    <button id="getRandomPokemon">Get random!</button>
+                </div>
+            </div>
+            <div id="pokemon-info">
+                <h1>welcome to the pokésearch!</h1>
+
+                <p>to use the Pokésearch just search the name of the pokémon you want to find <br> and it will display
+                    here.<br></p>
+
+                <p>if you do not know any pokémon to search for, <br> then use the PokéBrowse to view all of the pokémon
+                    and find one!</p><br>
+
+                <p>or press the random Button to generate a random Pokémon</p><br>
+
+                <p>"p.s if you're a turbo nerd like me you can use their pokédex number too!" -Elliot</p>
+            </div>
+
+
+
+
+        </div>
+        <!-- The data section shows the pokemons moves and locations from which they can be caught, and houses
+        buttons to switch between information -->
+        <div class="dataSection">
+            <div class="dataButtons">
+                <button id="movesButton">moves</button>
+                <button id="locationsButton">locations</button>
+            </div>
+
+            <div class="dataDisplay">
+                <div id="pokemon-data">
+                    <h1>Data Section</h1>
+                    <p>Data about the searched pokemon will be displayed in this column have fun searching!!</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

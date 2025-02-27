@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="../css/InventoryStyle.css" id="inventorystyle">
+    <script src="scripts\inventoryScript.js"></script>
+    <script src="scripts\darkmode.js"></script>
+</head>
+<body>
+
+    <!-- ================================== nav bar ===================================== -->
+    <%- include('../partials/nav') %>
+
+
+    <!-- ====================================== main body ===================================== -->
+    <!-- This page allows the user to create a team which will be saved to their account via Mongodb
+    this works by creating a new team, entering the pokemons name they wish to add, and saving the team  -->
+    <div class="inventoryMainBody">
+        <div class="buttonSection">
+            <h1>Team inventory</h1>
+            <button id="createTeam">New Team</button>
+            <button id="saveTeams">Save Teams</button>
+        </div>
+        <!-- ============Team Section================ -->
+        <div id="teamSection">
+        </div>
+    </div>
+</body>
+</html>
+

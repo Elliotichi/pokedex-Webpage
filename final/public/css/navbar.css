@@ -1,0 +1,124 @@
+/*CSS to style the top navbar which adds style to the body, nav image, buttons as*/
+/*as well as making them responseive when you hover over the buttons*/
+
+:root {
+    --white-colour: #fcfaf6;
+}
+
+html,
+
+/*==================================Main body and titles================================*/
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: var(--white-colour)
+}
+
+#siteLogo {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+
+}
+
+#siteTitle {
+    width: 160px;
+    height: auto;
+    padding: 8px;
+    
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF0000;
+    border: solid 5px #000000;
+    border-radius: 0 0 10px 10px;
+}
+
+.title {
+    background-color: var(--white-colour);
+    border: #303030 solid;
+    border-radius: 20px;
+}
+
+.title h1 {
+    color: #FF0000;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 5px;
+    margin: 0;
+}
+header{
+    position: sticky;
+    margin-bottom: 5px;
+    z-index: 2;
+    top: 0;
+}
+
+/*==============================Nav Buttons=========================*/
+.navigation {
+    position: relative;
+}
+
+.navigation a {
+    color: var(--white-colour);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Bebas Neue', sans-serif;
+    border: solid #303030;
+    border-radius: 10px;
+    background-color: #000000;
+    margin-right: 5px;
+    transition: 0.6s;
+}
+
+.navigation a:hover {
+    background-color: var(--white-colour);
+    color: #000000;
+}
+
+li{
+    transition: 0.6;
+}
+li:hover{
+    scale: 110%;
+    transition: 0.6s;
+}
+
+.navigation a:active{
+    color: #FF0000;
+    transition: 0s;
+}
+
+.navigation ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+
+@media screen and (max-width: 1000px ){
+    .navigation a{
+        font-size: 10px;
+        padding: 3px;
+    }
+
+    #siteLogo {
+        scale: 50%;
+        margin: 0;
+        padding: 0;
+        width: 80px;
+        height: auto;
+    }
+
+    .pageHeader{
+        justify-content: none;
+    }
+}

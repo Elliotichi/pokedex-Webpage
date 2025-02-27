@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+        <link rel="stylesheet" href="../css/users.css" id="userStyle">
+        <script src="scripts\usersScript.js"></script>
+</head>
+
+<!-- ================================Main Body================================== -->
+<!-- This page shows the users info and allows them to toggle darkmode, delete their account
+or logout -->
+<body>
+    <%- include('../partials/nav') %>
+
+    <div class="main">
+        <h2>Username:</h2> <p><%= user.login.username %></p>
+        <h2> Email:</h2> <p><%= user.email %></p>
+        
+
+        <div class="functionButtons">
+            <button id="darkmodeToggle">Toggle Dark Mode</button>
+            <button id="deleteAccountButton">Delete Account</button>
+            <button id="logoutButton">Log Out</button>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+/*CSS for the login screen divs, buttons and forms*/
+
+/*=================================Main Body==============================*/
+.LoginMainBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-colour);
+    color: #000000;
+    /* border: solid 5px #000000;
+    box-sizing: border-box; */
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 40px;
+    border-radius: 10px;
+    
+}
+
+.LoginMainBody button {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #000000;
+    font-size: 25px;
+    border-style: none;
+    border-radius: 7px;
+    border: solid #303030;
+    transition: 0.3s ease;
+    margin: 5px;
+
+}
+.LoginMainBody button:hover {
+    background-color: var(--white-colour);
+    color: #000000;
+}
+
+.login{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.LoginMainBody h1{
+    /* background-color: #000000; */
+    border-radius: 10px;
+    color: #303030;
+    padding: 5px;
+    text-align: center;
+    /* border: solid #303030; */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loginBox{
+    background-color:var(--white-colour);
+    border: solid 5px #303030;
+    border-radius: 10px;
+
+}
+
+/*=============================Form======================*/
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: 'calibri';
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}

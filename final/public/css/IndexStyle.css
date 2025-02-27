@@ -1,0 +1,247 @@
+:root {
+    --white-colour: #fcfaf6;
+}
+
+/*  
+============ Main Body ============
+*/
+.IndexMainBody {
+    padding-bottom: 20px;
+}
+
+.searchFilter{
+    margin-bottom: 5vh;
+    display: flex;
+}
+
+.search-bar {
+    margin-bottom: 5vh;
+}
+
+.right{
+    width: 70%;
+}
+
+.left{
+    width: 30%;
+}
+/*  
+============ loading ============
+*/
+#loadingZone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#loading{
+    color: #000000;
+
+}
+
+#loading:hover{
+    color: #ff0000;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/*  
+============  filter ============
+*/
+.filter-buttons{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff0000;
+    border: solid 5px #000000;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    
+}
+
+.filter-buttons-dark{
+    background-color: #000000;
+    border: solid 5px #ff0000;
+}
+
+.filter-buttons button{
+    font-size: 15px;
+    padding: 10px;
+    border: solid 3px #303030;
+    border-radius: 10px;
+    width: 60px;
+    text-align: center;
+    margin-left: 3px;
+}
+
+/*
+======== cards ==========
+*/
+#pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    justify-content: center;
+
+}
+
+.cardFrame{
+    background-color: #ff0000;
+    border: solid 5px #000000;
+    border-radius: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 15px solid #000000;
+    border-radius: 10px;
+    background-image:url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s;
+    text-align: center;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+    text-decoration: none;
+    padding: 15px;
+    
+}
+
+
+.pokemon-card h2{
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    border: solid #303030;
+    
+}
+
+#pokemonInput{
+
+    list-style-type: none;
+    background-color: var(--white-colour);
+    color: #000000;
+    text-align: center;
+    border-radius: 7px 7px 7px 7px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    border: solid #303030;
+    padding: 10px;
+    width: 30vw;
+}
+
+.filter-button{
+    border: #000000 solid 2px;
+    background-color: #000000; 
+    color: white;
+    width: 8%;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.filter-button:hover {
+    background-color: white;
+    color: #000000;
+    scale: 110%;
+}
+
+.filter-button:active{
+    color: #ff0000;
+    transition: 0s;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.02);
+}
+
+.pokemon-image {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    border: #000000 solid 5px;
+    border-radius: 4px;
+    background-color: #ff0000a0;
+    color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+th{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+td {
+    border: #000000 solid 2px;
+    border-radius: 10px;
+    color: #000000;
+    background-color: white;
+    padding: 6px;
+    text-align: center;
+    margin: 0;
+}
+
+.pokemon-card p{
+    background-color: #ff0000a0;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+    border: solid 5px #000000;
+    
+    
+}
+
+/*done so elliots tiny screen can actually see*/
+@media screen and (max-width: 1300px) {
+    .pokemon-card {
+        width: 75%;
+        max-width: 100%;
+    }
+    #pokemon-list {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 65px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    #pokemon-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    
+
+    .pokemon-card {
+        max-width: 100%;
+    }
+}

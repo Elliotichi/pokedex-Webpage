@@ -1,0 +1,107 @@
+
+/*==============================MAIN BODY===========================*/
+.inventoryMainBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/*======================Buttons=======================*/
+
+.buttonSection{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+button{
+    color: var(--white-colour);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #000000;
+    font-size: 25px;
+    border-style: none;
+    border-radius: 7px;
+    border: solid #303030;
+    margin: 5px; 
+    width: fit-content;
+}
+
+button:hover{
+    background-color: var(--white-colour);
+    color: #000000;
+}
+
+button:active{
+    color: #FF0000;
+}
+
+.delButtonWrapper{
+    float: left;
+}
+
+.delButtonWrapper button{
+    font-size: 15px;
+    padding: 2px;
+    margin: 5px;
+}
+
+/*===============================Search Bar========================*/
+
+input {
+    list-style-type: none;
+    background-color: var(--white-colour);
+    color: #000000;
+    text-align: center;
+    border-radius: 7px 7px 7px 7px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    border: solid #303030;
+    padding: 10px;
+    margin: 5px;
+    width: 30vw;
+}
+
+/*========================= Team CSS ==============================*/
+.teamCard{
+    background-color: #ff0000;
+    border: solid 5px #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 70vw;
+
+}
+
+#pokemonsection {
+    width: 100%; 
+    white-space: nowrap; 
+    overflow-x: auto; 
+}
+
+.pokemonWrapper {
+    display: inline-block;
+    margin: 6.5px;
+    padding: 5px;
+    width: 115px;
+    border: solid 5px #000000;
+    border-radius: 10px;
+    background-color: var(--white-colour);
+    text-align: center
+
+}
+
+.pokemonWrapper h3{
+    margin: 0;
+    background-color: #000000;
+    border-radius: 10px;
+    color: var(--white-colour);
+    padding: 15px;
+    border: solid #303030;
+}
+
+.pokemonWrapper img{
+    margin: 0;
+}

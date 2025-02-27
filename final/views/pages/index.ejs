@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<%- include('../partials/head') %>
+<link rel="stylesheet" href="../css/IndexStyle.css" id="indexstyle">
+<script src="scripts\indexScript.js"></script>
+<script src="scripts\darkmode.js"></script>
+</head>
+
+<body>
+    <!-- ============================ nav bar ============================== -->
+    <%- include('../partials/nav') %>
+    <!-- ============================ nav bar ============================== -->
+
+    <!-- ================= main body =================== -->
+    <!-- The index is the main page and shows all the pokemon in the API -->
+    <div class="IndexMainBody">
+        <div class="searchFilter">
+            <!-- the user can either look up the pokemon using the search bar or by using one of the premade pokemon filter buttons
+            to filter by the location -->
+            <div class="filter-buttons" id="gameFilters">
+
+                <input type="text" id="pokemonInput" placeholder="search Pokemon...">
+
+                <button id="kantoBtn" class="filter-button">Kanto</button>
+                <button id="johtoBtn" class="filter-button">Johto</button>
+                <button id="hoenBtn" class="filter-button">Hoen</button>
+                <button id="sinnohBtn" class="filter-button">Sinnoh</button>
+                <button id="unovaBtn" class="filter-button">Unova</button>
+                <button id="kalosBtn" class="filter-button">Kalos</button>
+                <button id="alolaBtn" class="filter-button">Alola</button>
+                <button id="galarBtn" class="filter-button">Galar</button>
+                <button id="hisuiBtn" class="filter-button">Hisui</button>
+                <button id="paldeaBtn" class="filter-button">Paldea</button>
+                <button id="allBtn" class="filter-button">All </button>
+
+
+            </div>
+
+        </div>
+        <div id="loadingZone">
+        </div>
+        <div id="pokemon-list">
+        </div>
+    </div>
+    <!-- ================= main body =================== -->
+
+</body>
+
+</html>

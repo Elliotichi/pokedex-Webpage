@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="../css/login.css" id="loginstyle">
+    <script src="scripts\loginScript.js"></script>
+    <script src="scripts\darkmode.js"></script>
+</head>
+
+<body>
+     <!-- ====================================== navbar ===================================== -->
+    <%- include('../partials/nav') %>
+
+
+     <!-- ====================================== main body ===================================== -->
+     <!-- This is the log in form which perfroms the /dologin function -->
+    <div class="LoginMainBody">
+        <form id="loginForm" action="/dologin" method="POST">
+            <h2>Account Login</h2>
+            <label for="username">Username:</label>
+            <input type="text"  name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="passText"  name="password" required>
+            
+            <div class="showpass-checkdiv">
+                <checkbox for="showingPass">Show Password</checkbox>
+                <input type="checkbox" id="checkbox">
+            </div>
+            <button type="submit">Login</button>
+            <button type="button" id="toggleFormBtn">Create Account</button>
+
+        </form>
+        <!-- This is the create account form which does the /adduser function -->
+        <form id="createAccountForm" action="/adduser" method="POST">
+            <h2>Create Account</h2>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" required>
+
+            <label for="usernameAdd">Username:</label>
+            <input type="text" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="passMakeText" name="password" required>
+
+            <div class="showpass-checkdiv">
+                <checkbox for="showingPass">Show Password</checkbox>
+                <input type="checkbox" id="checkbox2">
+            </div>
+
+            <button type="submit" id="createAccountBtn">Create Account</button> 
+            <button type="button" id="toggleFormBtnBack">Back to Login</button>
+
+        </form>
+    </div>
+
+
+</body>
